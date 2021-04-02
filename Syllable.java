@@ -82,6 +82,8 @@ public class Syllable {
      * @return the number of vowel runs in the word.
      */
     private int getRepeats(String word) {
+        //TODO: Cleanup how repeats are handled words such as eyes and acquainted show up as
+        //wrong syllable count.
         if (word.length() == 1) {
             return 0;
         }
